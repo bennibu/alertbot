@@ -1,5 +1,7 @@
 # Alertbot
 
+![Test](https://github.com/bennibu/alertbot/workflows/Test/badge.svg)
+
 The Alertbot receives messages from prometheus alertmanager and sends them to a specific lists of telegram chats.
 
 ## Setup
