@@ -11,6 +11,8 @@ GEM
     rack (2.2.2)
     rack-protection (2.0.8.1)
       rack
+    rack-test (1.1.0)
+      rack (>= 1.0, < 3)
     rainbow (3.0.0)
     rexml (3.2.4)
     rubocop (0.80.1)
@@ -40,6 +42,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  rack-test
   sinatra
   standard
 
