@@ -5,7 +5,7 @@ The Alertbot receives messages from prometheus alertmanager and sends them to a 
 ## Setup
 
     bundle install
-    bundle exec ruby app.rb
+    bundle exec ruby app.rb -p 4567 -e production
 
 ## Development
 

@@ -7,9 +7,12 @@ class MyTest < MiniTest::Unit::TestCase
     Sinatra::Application
   end
 
-  def test_it_says_hello_world
-    get "/"
-    assert last_response.ok?
-    assert_equal "Hello world!", last_response.body
+  def test_receiving_alerts
+    post "/alerts", {
+      "status" => "firing"
+    }.to_json,
+      {"CONTENT_TYPE" => "application/json"}
+
+    assert last_response.status, 201
   end
 end
