@@ -1,10 +1,6 @@
-ENV["APP_ENV"] = "test"
+require File.expand_path "../test_helper.rb", __FILE__
 
-require_relative "../app"
-require "test/unit"
-require "rack/test"
-
-class HelloWorldTest < Test::Unit::TestCase
+class MyTest < MiniTest::Unit::TestCase
   include Rack::Test::Methods
 
   def app
