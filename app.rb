@@ -2,6 +2,8 @@ require "sinatra"
 require 'sinatra/custom_logger'
 require 'logger'
 
+$stdout.sync = true # Disable log buffering
+
 set :logger, Logger.new(STDOUT)
 
 post "/alerts" do
