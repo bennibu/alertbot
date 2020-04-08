@@ -7,6 +7,7 @@ The Alertbot receives messages from prometheus alertmanager and sends them to a 
 ## Setup
 
     bundle install
+    export TELEGRAM_BOT_TOKEN=123 TELEGRAM_CHAT_ID=123
     bundle exec ruby app.rb -p 4567 -e production
 
 ## Development

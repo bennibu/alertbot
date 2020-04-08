@@ -6,6 +6,12 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
 gem "sinatra"
 gem "sinatra-contrib"
+gem "rest-client"
+
 gem "standard", group: [:development, :test]
-gem "rack-test", group: [:test]
-gem "minitest", group: [:test]
+
+group :test do
+  gem "rack-test"
+  gem "minitest"
+  gem "webmock"
+end
