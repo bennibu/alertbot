@@ -14,3 +14,10 @@ The Alertbot receives messages from prometheus alertmanager and sends them to a 
 
     bundle exec ruby test/app_test.rb
     bundle exec standardrb --fix
+
+## Help
+
+Get chat id:
+
+1. Start conversation with bot (@technischerpunkt-alerting-bot)
+2. Get Updates for bot and extract chat id: `curl https://api.telegram.org/bot<token>/getUpdates`
